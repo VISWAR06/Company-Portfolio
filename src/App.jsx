@@ -1,11 +1,24 @@
-import React from 'react'
+import React from "react";
+import Navbar from "./components/Nabvar";
+import Hero from "./components/Hero";
+import Skills from "./components/Skills";
+import Portfolio from "./components/Portfolio";
+import Experience from "./components/Experience";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
-    <div className='bg-red-900'>
-      hello
-    </div>
-  )
-}
+    <>
+      <Navbar />
+      <Hero />
+      <Skills />
+      <Portfolio />
+      <Experience />
+      <Contact />
+      <Footer />
+    </>
+  );
+};
 
-export default App
+export default App;
