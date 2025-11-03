@@ -1,7 +1,8 @@
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
 import { AiOutlineGithub, AiOutlineLinkedin } from "react-icons/ai";
-import profile from "../assets/viswa.jpg"; // 👈 import your image here
+import profile from "../assets/viswa.jpg";
+import resume from "../assets/resume.pdf"; // ✅ import resume here
 
 const Hero = () => {
   return (
@@ -9,7 +10,7 @@ const Hero = () => {
       className="min-h-screen flex flex-col justify-center items-center text-center px-6"
       id="hero"
     >
-      {/* 👇 Profile Image Section */}
+      {/* Profile Image */}
       <div className="mb-6">
         <img
           src={profile}
@@ -18,7 +19,7 @@ const Hero = () => {
         />
       </div>
 
-      {/* 👇 Animated Titles */}
+      {/* Animated Titles */}
       <TypeAnimation
         sequence={[
           "Full Stack Developer", 1500,
@@ -30,7 +31,7 @@ const Hero = () => {
         className="text-xl md:text-3xl text-primary mb-2"
       />
 
-      {/* 👇 Heading and Description */}
+      {/* Heading and Description */}
       <h1 className="text-4xl md:text-6xl font-bold text-gray-100 mb-4">
         Hey, I’m <span className="text-primary">Viswa R</span>
       </h1>
@@ -40,28 +41,20 @@ const Hero = () => {
         scalable web apps using the MERN stack and ServiceNow platform.
       </p>
 
-      {/* 👇 Social Icons */}
+      {/* Social Icons */}
       <div className="flex gap-6 justify-center mb-6 text-4xl text-primary">
-        <a
-          href="https://github.com/VISWAR06"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href="https://github.com/VISWAR06" target="_blank" rel="noopener noreferrer">
           <AiOutlineGithub />
         </a>
-        <a
-          href="https://www.linkedin.com/in/viswa-r-b37988286/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href="https://www.linkedin.com/in/viswa-r-b37988286/" target="_blank" rel="noopener noreferrer">
           <AiOutlineLinkedin />
         </a>
       </div>
 
-      {/* 👇 Download Resume Button */}
+      {/* ✅ Download Resume Button */}
       <a
-        href="/resume_VISWA.pdf"
-        download
+        href={resume}
+        download="Viswa_R_Resume.pdf"
         className="bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-700 transition"
       >
         Download CV
