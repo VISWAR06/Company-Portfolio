@@ -19,7 +19,6 @@ const Hero = () => {
         />
       </div>
 
-      {/* Animated Titles */}
       <TypeAnimation
         sequence={[
           "Full Stack Developer", 1500,
